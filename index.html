@@ -3,32 +3,23 @@
 
 <head>
     <title>88 Express, Inc.</title>
-
     <!--Required metatag and stylesheet-->
-
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
     <link rel="stylesheet" href="css/normalize.css">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
     <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee" rel="stylesheet">
-
     <!--Custom styles here-->
-
     <link rel="stylesheet" href="css/style.css">
-
     <style>
         .navbar-brand {
             background color: transparent;
         }
-
+        
         #s3 path {
             fill: green;
         }
-
+        
         footer path {
             fill: #000;
             text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
@@ -41,34 +32,28 @@
     <div id="s1">
         <nav class="navbar navbar-default affix-top">
             <div class="navbar-header">
-
-<!--
+                <!--
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
 				<span class="glyphicon glyphicon-menu-hamburger"></span>
 			</button>
 -->
-                <a class="navbar-brand" href="#">
-                <img src="img/88Express.png" id="logo" style="float:left;">
-               <br>
-                 <br style="clear:both;">
-            </a>
-
+                <a class="navbar-brand" href="#"> <img src="img/88Express.png" id="logo" style="float:left;">
+                    <br>
+                    <br style="clear:both;"> </a>
             </div>
-<!--            <div class="collapse navbar-collapse" id="navbar-collapse">
+            <!--            <div class="collapse navbar-collapse" id="navbar-collapse">
 <!--
                 <ul class="nav navbar-nav navbar-right">
                                         				<li class="active"><a href="#">Home</a></li>
 -->
-<!--
+            <!--
                     <li></li>
                 </ul>
             </div>
 -->
-            <div id="call">
-                <a href=tel:+16462582829><i class="fas fa-phone-volume"></i> Call Us: (646) 258-2829</a>
+            <div id="call"> <a href=tel:+16462582829><i class="fas fa-phone-volume"></i> Call Us: (646) 258-2829</a>
                 <br>
-                <h4> Monday - Friday: 9 AM - 5 PM (EDT)</h4>
-            </div>
+                <h4> Monday - Friday: 9 AM - 5 PM (EDT)</h4> </div>
         </nav>
     </div>
     <div id="s2">
@@ -77,16 +62,14 @@
             <div id="vid">
                 <iframe width="640" height="360" src="https://www.youtube.com/embed/o4B40sNx1YM?version=3&loop=1&autoplay=1&playlist=o4B40sNx1YM&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
-                <div id="vid2">
+            <div id="vid2">
                 <iframe width="640" height="360" src="https://www.youtube.com/embed/o4B40sNx1YM?version=3&mute=1" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
             </div>
             <div class="transvid">
                 <div class="captions">
                     <h1>Reliable Container Shipping and Delivery</h1>
                     <br>
-                    <h2>"Delivery when you want it, where you want it"</h2>
-                    <a href="#quote" class="btn">Get free quote</a>
-                </div>
+                    <h2>"Delivery when you want it, where you want it"</h2> <a href="#quote" class="btn">Get free quote</a> </div>
             </div>
         </div>
     </div>
@@ -107,42 +90,36 @@
                 <div id="contact">
                     <h3><i class="fas fa-phone-volume"></i> Call 646 • 258 • 2829</h3>
                     <h3>Or send your message for a free quote:</h3>
-                    <form>
-                        <label> Name
-            <br>
-            <input type="text" name="fn" class="tspace" Placeholder="John Doe" required > </label>
-                        <br>
-                        <label> Email
-                <br>
-            <input type="email" name="email" class="tspace">
-        </label>
-                        <br>
-                        <label> Message
-<br>
-            <textarea name=”message”></textarea></label>
+                    <form method="post" enctype="multipart/form-data">
+                        <label> What type of website do you want to build? </label>
+                        <div id="radio">
+                            <label class="container2">Consumer
+                                <input type="radio" name="webtype" value="consumer" required> <span class="checkmark"></span> </label>
+                            <label class="container2">Business to Business (B2B)
+                                <input type="radio" name="webtype" value="b2b" required> <span class="checkmark"></span> </label>
+                            <label class="container2">Business to Consumer (B2C)
+                                <input type="radio" name="webtype" value="b2c" required> <span class="checkmark"></span> </label>
+                        </div>
+                        <input type="text" name="webtype" class="tspace" placeholder="Other">
                         <br>
                         <div id=last>
-                            <input type="submit" name="submit" value="Send">
-                        </div>
+                            <input type="submit" name="submit" value="Send"> </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
     <footer>
-        <br>
-        <small>88 Express, Inc &copy; 2018 
+        <br> <small>88 Express, Inc &copy; 2018 
         <br>
         145 40th Street,
         <br>
         Irvington, NJ  07111
         <br>
-        <a href=tel:+16462582829> (646) 258-2829</a></small>
-    </footer>
+        <a href=tel:+16462582829> (646) 258-2829</a></small> </footer>
 </body>
 <!--Required scripts-->
-
 <script src="js/jquery.min.js"></script>
-
 <script src="js/bootstrap.min.js"></script>
+
 </html>
