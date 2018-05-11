@@ -5,7 +5,7 @@ $w = $_POST['webtype'];
 //$z = $_POST['b2c'];
 
 ////retrieve the Json file and converted it into php array
-$j = file_get_contents('ppl.json');
+$j = file_get_contents('results.json');
 $j = json_decode($j, true);
 
 //print_r ($j);
@@ -22,7 +22,7 @@ $add = array(
 	"webtype" => $w,
 //	"gender" => $g
 );
-//print_r ($add);
+print_r ($add);
 
 // append my new array into the json array
 array_push($j, $add);
